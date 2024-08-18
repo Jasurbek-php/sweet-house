@@ -1,0 +1,241 @@
+:root {
+    --main-color: #0095f6;
+    --text-color: #000000;
+    --background-color: rgb(250, 250, 250);
+    --border-color: 219, 219, 219;
+    --footer-text-color: rgb(00, 55, 107);
+}
+*{
+    margin: 0;
+    background:  hsla(0, 0%, 13%, 1);
+}
+.navbar{
+    background-color: hsla( 0, 0%, 13%, 1);
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar span{
+    color: rgb(191, 191, 5);
+}
+.menu{
+    width: 100%;
+    height:  auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: hsla( 0, 0%, 13%, 1);
+}
+.card{
+    /* width: 450px ;
+    height: 220px; */
+    padding: 10px 0px;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 20px;
+ }
+.card img{
+    width: 100%;
+    border-radius: 20px;
+}
+.one img{
+    width: 80%;
+    height: 150px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+.card_left{
+    width: 200px;
+}
+.card_right{
+    width: 230px;
+    margin-left: 20px;
+}
+.card_right p{
+    color: grey;
+    margin-top: 20px;
+}
+.card_right pre{
+    color: grey;
+}
+.card_right button{
+    padding: 7px 12px;
+    margin-top: 20px;
+    border: 2px solid beige;
+    background-color: transparent;
+    color: beige;
+    transition: 0.5s;
+}
+.card_right button:hover{
+    border: none;
+    background-color: beige;
+    color: black;
+}
+
+/* footer */
+.login-post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 24px;
+    padding: 10px;
+  }
+  .login-post p{
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .inputs-container{
+    margin: 0 40px 6px;
+    width: 100%;
+  }
+  
+  .inputs-container input{
+    background: var(--background-color);
+    width: 100%;
+    color: var(--text-color);
+    padding: 9px 0 7px 8px;
+    border: 1px solid rgba(var(--border-color),1);
+    border-radius: 2px;
+    outline: none;
+  }
+  #text1{
+    text-transform: capitalize;
+  }
+  #text1::placeholder{
+    text-transform: none;
+  }
+  
+  .inputs-container input:focus{
+    border-color: rgb(180, 180, 180);
+  }
+  .inputs-container textarea{
+    padding: 9px 0 7px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+    width: 100%;
+    border: 1px solid rgba(var(--border-color),1);
+    border-radius: 2px;
+    outline: none;
+  }
+  
+  .inputs-container textarea:focus{
+    border-color: rgb(180, 180, 180);
+  }
+  .login-button{
+    background-color: rgb(0, 0, 255);
+    color: rgb(255,255,255);
+    font-weight: bold;
+    padding: 9px 0 7px 8px; 
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+  }
+  .login-button a{
+    color: rgb(255,255,255);
+    background: transparent;
+    text-decoration: none;
+  }
+  
+  .login-button:hover{
+    background-color: green;
+  }
+footer ul{
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li{
+    font-size: 20px ;
+    color: white;
+    list-style: none;
+}
+
+footer ul li .phone{
+    color: white;
+    text-decoration: underline blue;
+}
+
+a.a-footer{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.sweet-House{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+@media(max-width:490px){
+    .navbar{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .card{
+        width: 400px;
+        height: auto;
+        margin-left: 0px;
+    }
+    
+    .card_left{
+        width: 120px;
+    }
+    .two{
+        height: 230px;
+    }
+    .one img{
+        width: 100%;
+        height: 100px;
+        margin-left: 0px;
+        object-fit: cover;
+    }
+    footer ul li{
+        font-size: 16px;
+    }
+}
+@media(max-width:400px){
+    .card{
+        width: 330px;
+    }
+    .sweet-House{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:350px){
+    .card{
+        margin-left: 3%;
+        width: 300px;
+    }
+    .card h1{
+        font-size: 25px;
+    }
+}
+@media(max-width:320px){
+    .card_right{
+        width:  140px;
+    }
+    .card{
+        overflow: hidden;
+    }
+}
+
