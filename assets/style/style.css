@@ -150,6 +150,9 @@
   .login-button:hover{
     background-color: green;
   }
+#form p{
+    font-family: sans-serif;
+}
 footer ul{
     color: white;
     margin-top: 30px;
