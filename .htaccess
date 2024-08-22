@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Asosiy sahifa uchun (index.html)
+RewriteRule ^$ index.html [L]
+
+# Birinchi taom sahifasi uchun
+RewriteRule ^tort$ first_meal.html [L]
+
