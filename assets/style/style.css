@@ -70,6 +70,7 @@
     border: 2px solid beige;
     background-color: transparent;
     color: beige;
+    cursor: pointer;
     transition: 0.5s;
 }
 .card_right button:hover{
@@ -138,6 +139,7 @@
     text-align: center;
     width: 100%;
     outline: none;
+    cursor: pointer;
     border: none;
     transition: .3s ease;
   }
